@@ -9,41 +9,39 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://YOURDOMAIN.com/" />
 
-  <!-- Open Graph -->
+  <!-- Social -->
   <meta property="og:title" content="D&D Learning and Consulting Solutions" />
-  <meta property="og:description" content="Your on-call training partner—talent development, staff development, and leadership development. DMV in-person + virtual worldwide." />
+  <meta property="og:description" content="Training, talent development, staff development, and leadership development—DMV in-person + virtual worldwide." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://YOURDOMAIN.com/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Font -->
+  <!-- Fonts (mix for visual hierarchy) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "D&D Learning and Consulting Solutions",
-    "founder": "Namrata Ram",
-    "url": "https://YOURDOMAIN.com/",
-    "telephone": "+12404080140",
-    "email": "tabithagram@yahoo.com",
-    "sameAs": ["https://www.linkedin.com/in/namrataram/"],
-    "description": "Training, talent development, staff development, and leadership development workshops for small businesses, schools, and universities. In-person in Maryland, Washington DC, and Virginia (DMV). Virtual workshops anywhere in the USA and worldwide across time zones.",
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Maryland" },
-      { "@type": "AdministrativeArea", "name": "Virginia" },
-      { "@type": "AdministrativeArea", "name": "District of Columbia" },
-      { "@type": "Country", "name": "United States" },
-      { "@type": "Place", "name": "Worldwide" }
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"D&D Learning and Consulting Solutions",
+    "founder":"Namrata Ram",
+    "url":"https://YOURDOMAIN.com/",
+    "telephone":"+12404080140",
+    "email":"tabithagram@yahoo.com",
+    "sameAs":["https://www.linkedin.com/in/namrataram/"],
+    "description":"Training, talent development, staff development, and leadership development workshops for small businesses, schools, and universities. In-person in Maryland, Washington DC, and Virginia (DMV). Virtual workshops anywhere in the USA and worldwide across time zones.",
+    "areaServed":[
+      {"@type":"AdministrativeArea","name":"Maryland"},
+      {"@type":"AdministrativeArea","name":"Virginia"},
+      {"@type":"AdministrativeArea","name":"District of Columbia"},
+      {"@type":"Country","name":"United States"},
+      {"@type":"Place","name":"Worldwide"}
     ],
-    "serviceType": [
+    "serviceType":[
       "Training and Development",
       "Talent Development",
       "Staff Development",
@@ -55,307 +53,414 @@
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you offer leadership development training in Maryland, Washington DC, and Virginia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. D&D Learning and Consulting Solutions delivers in-person leadership development, staff development, and training workshops across Maryland, Washington DC, and Virginia (the DMV region)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide virtual training workshops across time zones?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Virtual training, talent development, and leadership development workshops are available anywhere in the USA and worldwide, regardless of time zone."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What types of organizations do you support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I work with small businesses, schools, universities, and teams that need training and talent development but do not have internal learning and development staff."
-        }
-      }
-    ]
-  }
-  </script>
-
   <style>
     :root{
-      /* Warm + modern palette */
-      --bg:#FBF7F2;
-      --panel:#FFFFFF;
-      --mist:#EAF4F2;
-      --text:#0B1220;
-      --muted:#516070;
-      --border:rgba(11,18,32,.10);
+      /* Palette: warm + modern + professional */
+      --bg: #fbf7f2;
+      --panel: rgba(255,255,255,.78);
+      --panel2: rgba(255,255,255,.92);
+      --ink: #0b1220;
+      --muted: #516070;
+      --line: rgba(11,18,32,.10);
 
-      --primary:#0F766E;
-      --primary2:#115E59;
-      --accent:#B45309;
+      --teal: #0f766e;
+      --teal2: #115e59;
+      --coral: #e76f51;
+      --amber: #b45309;
 
-      --shadow:0 18px 44px rgba(11,18,32,.10);
-      --shadow2:0 10px 24px rgba(11,18,32,.06);
+      --shadow: 0 22px 60px rgba(11,18,32,.10);
+      --shadow2: 0 12px 30px rgba(11,18,32,.08);
 
-      --r:18px;
-      --max:1120px;
+      --r: 22px;
+      --max: 1140px;
 
-      --s1:8px; --s2:12px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:72px;
+      --s1: 8px; --s2: 12px; --s3: 16px; --s4: 24px; --s5: 32px; --s6: 48px; --s7: 72px;
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--text);
-      line-height:1.55;
+      color:var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
       background:
-        radial-gradient(900px 520px at 10% -10%, rgba(15,118,110,.18), transparent 60%),
-        radial-gradient(900px 520px at 90% 0%, rgba(180,83,9,.14), transparent 62%),
-        linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,0) 45%),
+        radial-gradient(900px 520px at 10% -10%, rgba(15,118,110,.20), transparent 60%),
+        radial-gradient(900px 520px at 90% -10%, rgba(231,111,81,.18), transparent 62%),
+        radial-gradient(900px 620px at 50% 30%, rgba(180,83,9,.10), transparent 62%),
+        linear-gradient(180deg, rgba(255,255,255,.68), rgba(255,255,255,0) 52%),
         var(--bg);
     }
     a{color:inherit;text-decoration:none}
-    a:hover{text-decoration:none}
-    .container{max-width:var(--max);margin:0 auto;padding:0 var(--s4)}
-    .sr-only{
-      position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
-      clip:rect(0,0,0,0);white-space:nowrap;border:0;
+    .container{max-width:var(--max); margin:0 auto; padding:0 var(--s4)}
+    .muted{color:var(--muted)}
+    .small{font-size:13px; color:var(--muted)}
+    .balance{text-wrap:balance}
+
+    /* Focus */
+    :focus-visible{outline:3px solid rgba(15,118,110,.22); outline-offset:2px; border-radius:10px}
+
+    /* Motion (respect preference) */
+    @media (prefers-reduced-motion: reduce){
+      *{scroll-behavior:auto !important; transition:none !important; animation:none !important}
     }
 
-    /* Nav */
+    /* Top nav */
     header{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:blur(10px);
-      background:rgba(251,247,242,.78);
-      border-bottom:1px solid var(--border);
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(251,247,242,.78);
+      border-bottom: 1px solid var(--line);
     }
     .nav{
-      display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
-      padding:var(--s3) 0;
+      display:flex; align-items:center; justify-content:space-between;
+      gap: var(--s4);
+      padding: var(--s3) 0;
     }
     .brand{
-      display:flex;align-items:center;gap:10px;
-      font-weight:800;letter-spacing:-.02em;
+      display:flex; align-items:center; gap: 12px;
+      font-weight: 900; letter-spacing:-.02em;
+      min-width: 260px;
     }
     .mark{
-      width:36px;height:36px;border-radius:14px;
-      background:linear-gradient(135deg,var(--primary),rgba(180,83,9,.95));
-      box-shadow:0 14px 30px rgba(15,118,110,.20);
+      width: 38px; height: 38px; border-radius: 16px;
+      background: linear-gradient(135deg, var(--teal), rgba(231,111,81,.95));
+      box-shadow: 0 16px 36px rgba(15,118,110,.18);
+      position: relative;
+      overflow:hidden;
     }
-    nav.links{display:flex;gap:14px;color:var(--muted);font-weight:700}
-    nav.links a{padding:10px 10px;border-radius:12px}
-    nav.links a:hover{background:rgba(15,118,110,.07);color:var(--text)}
-    .nav-cta{display:flex;gap:10px;align-items:center}
+    .mark:after{
+      content:"";
+      position:absolute; inset:-40% -40% auto auto;
+      width: 80px; height: 80px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.45), transparent 60%);
+      transform: rotate(18deg);
+    }
+
+    nav.links{display:flex; align-items:center; gap: 6px; color:var(--muted); font-weight:800}
+    nav.links a{
+      padding: 10px 12px;
+      border-radius: 999px;
+      transition: background .15s ease, color .15s ease;
+    }
+    nav.links a:hover{background: rgba(15,118,110,.07); color: var(--ink)}
+    .nav-cta{display:flex; gap: 10px; align-items:center}
 
     /* Buttons */
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:12px 16px;border-radius:999px;border:1px solid var(--border);
-      background:rgba(255,255,255,.78);box-shadow:var(--shadow2);
-      font-weight:800;white-space:nowrap;
-      transition:transform .15s ease,background .15s ease,border-color .15s ease;
+      display:inline-flex; align-items:center; justify-content:center; gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      box-shadow: var(--shadow2);
+      font-weight: 900;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      white-space: nowrap;
     }
-    .btn:hover{transform:translateY(-1px);background:#fff;border-color:rgba(15,118,110,.25)}
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.92); border-color: rgba(15,118,110,.22)}
     .btn.primary{
-      border-color:rgba(15,118,110,.45);
-      background:linear-gradient(135deg,var(--primary),var(--primary2));
-      color:#fff;box-shadow:0 16px 36px rgba(15,118,110,.22);
+      border-color: rgba(15,118,110,.45);
+      color:#fff;
+      background: linear-gradient(135deg, var(--teal), var(--teal2));
+      box-shadow: 0 18px 44px rgba(15,118,110,.20);
     }
     .btn.ghost{
-      background:transparent;
-      border-color:rgba(11,18,32,.16);
       box-shadow:none;
+      background: transparent;
+      border-color: rgba(11,18,32,.16);
     }
-    .btn.ghost:hover{background:rgba(255,255,255,.7)}
-    .btn:focus{outline:3px solid rgba(15,118,110,.25);outline-offset:2px}
+    .btn.ghost:hover{background: rgba(255,255,255,.6)}
+
+    .icon{
+      width: 18px; height: 18px; flex: 0 0 auto;
+      display:inline-block;
+    }
 
     /* Hero */
-    .hero{padding:var(--s7) 0 var(--s6)}
+    .hero{padding: var(--s7) 0 var(--s6)}
     .hero-grid{
-      display:grid;grid-template-columns:1.05fr .95fr;
-      gap:var(--s6);align-items:start;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: var(--s6);
+      align-items: start;
     }
-    .eyebrow{
-      display:inline-flex;gap:10px;align-items:center;
-      padding:10px 12px;border-radius:999px;
-      background:rgba(15,118,110,.08);
-      border:1px solid rgba(15,118,110,.16);
-      color:rgba(15,118,110,.95);
-      font-weight:900;letter-spacing:-.01em;
-      margin-bottom:var(--s4);
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(15,118,110,.16);
+      background: rgba(15,118,110,.08);
+      color: rgba(15,118,110,.95);
+      font-weight: 900;
+      letter-spacing:-.01em;
+      margin-bottom: var(--s4);
     }
-    .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--accent))}
+    .dot{width:10px; height:10px; border-radius: 999px; background: linear-gradient(135deg, var(--teal), var(--coral))}
     h1{
-      font-size:clamp(40px,4.6vw,64px);
-      line-height:1.02;letter-spacing:-.04em;
-      margin:0 0 var(--s4);
+      font-family: Fraunces, serif;
+      font-weight: 700;
+      font-size: clamp(42px, 4.8vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      margin: 0 0 var(--s4);
     }
     .lead{
-      font-size:18px;color:var(--muted);
-      margin:0 0 var(--s5);
-      max-width:78ch;
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 var(--s5);
+      max-width: 78ch;
     }
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;color:var(--muted);font-size:14px}
+    .hero-actions{display:flex; gap: 12px; flex-wrap:wrap}
+    .pills{display:flex; gap:10px; flex-wrap:wrap; margin-top: 16px}
     .pill{
-      display:inline-flex;gap:8px;align-items:center;
-      padding:10px 12px;border-radius:999px;
-      background:rgba(255,255,255,.72);
-      border:1px solid var(--border);
-      box-shadow:0 10px 24px rgba(11,18,32,.05);
+      display:inline-flex; align-items:center; gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.68);
+      box-shadow: 0 10px 24px rgba(11,18,32,.05);
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 13px;
     }
-    .pill b{color:var(--text)}
+    .pill b{color: var(--ink)}
+    .pill .mini{
+      width: 26px; height: 26px; border-radius: 12px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background: rgba(15,118,110,.10);
+      border: 1px solid rgba(15,118,110,.16);
+    }
 
-    /* Hero Visual */
-    .visual{
-      position:relative;border-radius:calc(var(--r) + 8px);
-      overflow:hidden;border:1px solid var(--border);
-      box-shadow:var(--shadow);min-height:540px;background:#fff;
+    /* Hero visual: layered image + “wave” line */
+    .hero-card{
+      position: relative;
+      border-radius: calc(var(--r) + 10px);
+      overflow:hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      min-height: 560px;
+      background: #fff;
     }
-    .visual::before{
-      content:"";position:absolute;inset:0;
+    .hero-card .img{
+      position:absolute; inset:0;
       background:
-        linear-gradient(180deg, rgba(11,18,32,.06), rgba(11,18,32,.45)),
+        linear-gradient(180deg, rgba(11,18,32,.10), rgba(11,18,32,.55)),
         url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
-      /* Replace with your own workshop photo for best results */
     }
-    .visual .overlay{
-      position:absolute;inset:0;
-      display:flex;flex-direction:column;
+    .hero-card .wave{
+      position:absolute; inset: 0;
+      opacity: .55;
+      mix-blend-mode: screen;
+      pointer-events:none;
+    }
+    .hero-card .overlay{
+      position:absolute; inset:0;
+      display:flex; flex-direction:column;
       justify-content:flex-end;
-      padding:var(--s5);gap:var(--s3);
+      padding: var(--s5);
+      gap: var(--s3);
     }
-    .float{
-      background:rgba(255,255,255,.86);
-      border:1px solid rgba(255,255,255,.35);
-      border-radius:var(--r);
-      box-shadow:0 18px 44px rgba(11,18,32,.18);
-      padding:var(--s4);
-      backdrop-filter:blur(10px);
+    .glass{
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: var(--r);
+      box-shadow: 0 18px 44px rgba(11,18,32,.18);
+      padding: var(--s4);
+      backdrop-filter: blur(10px);
     }
-    .float h3{margin:0 0 8px;letter-spacing:-.02em}
-    .float p{margin:0;color:var(--muted);font-size:14px}
-    .mini-row{display:flex;gap:10px;flex-wrap:wrap}
-    .mini-badge{
-      display:inline-flex;gap:8px;align-items:center;
-      padding:10px 12px;border-radius:999px;
-      background:rgba(234,244,242,.90);
-      border:1px solid rgba(15,118,110,.18);
-      color:rgba(11,18,32,.92);
-      font-weight:800;font-size:13px;
+    .glass h3{margin:0 0 10px; letter-spacing:-.02em}
+    .glass p{margin:0; color: var(--muted); font-size: 14px}
+    .stats{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 12px;
     }
-    .mini-badge span{
-      width:22px;height:22px;border-radius:10px;
-      display:inline-flex;align-items:center;justify-content:center;
-      background:rgba(15,118,110,.12);
-      border:1px solid rgba(15,118,110,.18);
+    .stat{
+      border-radius: 16px;
+      border: 1px solid rgba(15,118,110,.14);
+      background: rgba(234,244,242,.86);
+      padding: 12px 12px;
     }
+    .stat b{display:block; font-weight: 900; letter-spacing:-.01em}
+    .stat span{display:block; font-size: 12px; color: var(--muted); margin-top: 4px}
+
+    /* Section separators (soft waves) */
+    .divider{
+      position: relative;
+      height: 56px;
+      margin-top: -16px;
+    }
+    .divider svg{display:block; width:100%; height:100%}
+    .divider path{fill: rgba(255,255,255,.55)}
 
     /* Sections */
-    section{padding:var(--s6) 0}
-    .section-title{font-size:30px;letter-spacing:-.02em;margin:0 0 8px}
-    .section-sub{margin:0 0 var(--s5);color:var(--muted);max-width:88ch}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:start}
+    section{padding: var(--s6) 0}
+    .section-head{margin-bottom: var(--s5)}
+    .eyebrow2{
+      font-weight: 900;
+      color: rgba(15,118,110,.95);
+      letter-spacing:-.01em;
+      display:flex; align-items:center; gap:10px;
+      margin-bottom: 10px;
+    }
+    .eyebrow2 .spark{
+      width: 14px; height: 14px; border-radius: 6px;
+      background: linear-gradient(135deg, var(--teal), var(--coral));
+    }
+    h2{
+      font-family: Fraunces, serif;
+      letter-spacing: -0.02em;
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.08;
+      margin: 0 0 10px;
+    }
+    .sub{margin:0; color: var(--muted); max-width: 90ch; font-size: 16px}
+
+    /* Trust band */
+    .trust{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.62);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 26px rgba(11,18,32,.06);
+      flex-wrap: wrap;
+    }
+    .trust strong{font-weight: 900}
+    .chips{display:flex; gap:10px; flex-wrap:wrap}
+    .chip{
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(15,118,110,.06);
+      border: 1px solid rgba(15,118,110,.14);
+      font-weight: 900;
+      color: rgba(11,18,32,.88);
+      font-size: 13px;
+      display:inline-flex; gap:8px; align-items:center;
+    }
+    .chip .c-dot{width:8px; height:8px; border-radius:999px; background: rgba(231,111,81,.9)}
+
+    /* Layout blocks */
+    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items:start}
     .panel{
-      background:rgba(255,255,255,.86);
-      border:1px solid var(--border);
-      border-radius:calc(var(--r) + 6px);
-      box-shadow:var(--shadow2);
-      padding:var(--s5);
-    }
-    .panel.mist{background:rgba(234,244,242,.90);border-color:rgba(15,118,110,.14)}
-    .panel h3{margin:0 0 10px;letter-spacing:-.02em}
-    .panel ul{margin:0;padding-left:18px;color:var(--muted)}
-    .panel li{margin:8px 0}
-
-    /* Workshop cards */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
-    .card{
-      background:rgba(255,255,255,.88);
-      border:1px solid var(--border);
-      border-radius:var(--r);
-      padding:var(--s5);
-      box-shadow:var(--shadow2);
-      transition:transform .15s ease,border-color .15s ease;
-      min-height:240px;
-    }
-    .card:hover{transform:translateY(-2px);border-color:rgba(15,118,110,.22)}
-    .card h3{margin:0 0 10px;font-size:18px;letter-spacing:-.01em}
-    .card p{margin:0 0 12px;color:var(--muted)}
-    .card ul{margin:0;padding-left:18px;color:var(--muted)}
-    .card li{margin:6px 0}
-
-    /* Image strip */
-    .image-strip{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: var(--s4);
-      align-items: stretch;
-      margin-top: var(--s5);
-    }
-    .img-card{
-      border-radius: calc(var(--r) + 8px);
-      overflow:hidden;
-      border:1px solid var(--border);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: calc(var(--r) + 6px);
       box-shadow: var(--shadow2);
-      background: #fff;
-      min-height: 320px;
+      padding: var(--s5);
       position: relative;
+      overflow:hidden;
     }
-    .img-card .img{
-      position:absolute; inset:0;
-      background-size: cover;
-      background-position: center;
-      filter: saturate(1.05);
+    .panel::after{
+      content:"";
+      position:absolute; inset:auto -80px -80px auto;
+      width: 220px; height: 220px; border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, rgba(15,118,110,.12), transparent 60%);
+      transform: rotate(18deg);
+      pointer-events:none;
     }
-    .img-card .cap{
-      position:absolute; inset:auto 0 0 0;
-      padding: var(--s4);
-      background: linear-gradient(180deg, transparent, rgba(11,18,32,.55));
-      color: #fff;
+    .panel.alt{background: rgba(234,244,242,.72); border-color: rgba(15,118,110,.14)}
+    .panel h3{margin:0 0 10px; letter-spacing:-.02em}
+    .panel ul{margin:0; padding-left: 18px; color: var(--muted)}
+    .panel li{margin: 8px 0}
+
+    /* Cards with icons */
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s4);
     }
-    .cap strong{display:block;font-size:16px;letter-spacing:-.01em}
-    .cap span{display:block;opacity:.9;font-size:13px;margin-top:6px}
+    .card{
+      background: var(--panel2);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      box-shadow: var(--shadow2);
+      padding: var(--s5);
+      transition: transform .15s ease, border-color .15s ease;
+      position: relative;
+      overflow:hidden;
+      min-height: 260px;
+    }
+    .card:hover{transform: translateY(-2px); border-color: rgba(15,118,110,.22)}
+    .card .top{
+      display:flex; align-items:center; gap: 12px;
+      margin-bottom: 10px;
+    }
+    .badge-icon{
+      width: 44px; height: 44px; border-radius: 18px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background: rgba(15,118,110,.10);
+      border: 1px solid rgba(15,118,110,.16);
+    }
+    .card h3{margin:0; font-size: 18px; letter-spacing:-.01em}
+    .card p{margin: 10px 0 12px; color: var(--muted)}
+    .card ul{margin:0; padding-left: 18px; color: var(--muted)}
+    .card li{margin: 6px 0}
+    .card .hint{
+      margin-top: 14px;
+      display:inline-flex; align-items:center; gap: 10px;
+      font-weight: 900;
+      color: rgba(15,118,110,.95);
+      background: rgba(15,118,110,.06);
+      border: 1px solid rgba(15,118,110,.14);
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
 
     /* Contact */
-    .contact{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
-    form{display:grid;gap:12px}
-    label{font-size:13px;color:var(--muted)}
-    input,textarea{
-      width:100%;padding:12px 14px;border-radius:14px;
-      border:1px solid var(--border);
-      background:rgba(255,255,255,.92);
-      font:inherit;
+    .contact{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s5);
     }
-    textarea{min-height:120px;resize:vertical}
-    input:focus,textarea:focus{outline:3px solid rgba(15,118,110,.22);border-color:rgba(15,118,110,.35)}
-    .contact-line{margin:0 0 10px;color:var(--muted)}
-    .contact-line strong{color:var(--text)}
+    form{display:grid; gap: 12px}
+    label{font-size:13px; color: var(--muted); font-weight: 800}
+    input, textarea{
+      width:100%;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.92);
+      font: inherit;
+    }
+    textarea{min-height: 120px; resize: vertical}
+    input:focus, textarea:focus{outline: 3px solid rgba(15,118,110,.18); border-color: rgba(15,118,110,.35)}
+    .contact-row{
+      display:flex; gap: 10px; flex-wrap:wrap; margin-top: 14px;
+    }
+    .contact-card{
+      display:flex; gap: 12px; align-items:flex-start;
+      padding: 14px 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.70);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 22px rgba(11,18,32,.05);
+    }
+    .contact-card b{display:block; letter-spacing:-.01em}
+    .contact-card span{display:block; color: var(--muted); font-size: 13px; margin-top: 3px}
+
+    /* Footer */
     footer{
-      padding:var(--s6) 0;
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:14px;
+      padding: var(--s6) 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
     }
-    .footer-row{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap}
-    .small{font-size:13px;color:var(--muted)}
+    .footer-row{display:flex; justify-content:space-between; gap: var(--s4); flex-wrap:wrap}
 
     /* Responsive */
     @media (max-width: 980px){
       nav.links{display:none}
-      .hero-grid,.split,.cards,.contact,.image-strip{grid-template-columns:1fr}
-      .visual{min-height:440px}
-      .img-card{min-height:260px}
+      .hero-grid{grid-template-columns: 1fr; }
+      .hero-card{min-height: 460px}
+      .stats{grid-template-columns: 1fr}
+      .grid2{grid-template-columns: 1fr}
+      .cards{grid-template-columns: 1fr}
+      .contact{grid-template-columns: 1fr}
     }
   </style>
 </head>
@@ -371,16 +476,27 @@
 
       <nav class="links" aria-label="Primary navigation">
         <a href="#services">Workshops</a>
-        <a href="#dmv">DMV in-person</a>
+        <a href="#dmv">DMV</a>
         <a href="#virtual">Virtual</a>
         <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-cta">
-        <a class="btn ghost" href="./Empowering-Leaders-Transforming-Teams.pdf">Brochure</a>
-        <a class="btn primary" href="#contact">Get a quote</a>
+        <a class="btn ghost" href="./Empowering-Leaders-Transforming-Teams.pdf" aria-label="View workshop brochure">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 3v4a2 2 0 0 0 2 2h4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          Brochure
+        </a>
+        <a class="btn primary" href="#contact">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="white" stroke-width="2" />
+            <path d="M3 8l9 6 9-6" stroke="white" stroke-width="2" />
+          </svg>
+          Get a quote
+        </a>
       </div>
     </div>
   </div>
@@ -392,163 +508,181 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Training & talent development for teams without internal L&D</div>
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Training & talent development for teams without internal L&D
+          </div>
 
-          <h1>Leadership development and staff development—without hiring a full-time training team.</h1>
+          <h1 class="balance">Leadership development and staff development—without building a full training department.</h1>
 
           <p class="lead">
             I’m <strong>Namrata Ram</strong>, founder of <strong>D&D Learning and Consulting Solutions</strong>.
             I provide <strong>training</strong>, <strong>talent development</strong>, <strong>staff development</strong>, and
-            <strong>leadership development</strong> workshops for small businesses, schools, and universities—so you get a high-quality
-            learning experience without building a program from scratch.
+            <strong>leadership development</strong> workshops for small businesses, schools, and universities—so your team grows with clarity and confidence.
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)&body=Hi%20Namrata%2C%0A%0AWe%E2%80%99re%20interested%20in%20training%20%2F%20talent%20development%20%2F%20staff%20development%20%2F%20leadership%20development.%0AOrganization%3A%0ALocation%20(DMV%20or%20Virtual)%3A%0AParticipants%3A%0AGoal%3A%0APreferred%20dates%3A%0A%0AThank%20you!">Email to schedule</a>
-            <a class="btn" href="#services">View workshops</a>
-            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>Download brochure</a>
+            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)&body=Hi%20Namrata%2C%0A%0AWe%E2%80%99re%20interested%20in%20training%20%2F%20talent%20development%20%2F%20staff%20development%20%2F%20leadership%20development.%0AOrganization%3A%0ALocation%20(DMV%20or%20Virtual)%3A%0AParticipants%3A%0AGoal%3A%0APreferred%20dates%3A%0A%0AThank%20you!">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16v16H4z" stroke="white" stroke-width="2" />
+                <path d="M4 8h16" stroke="white" stroke-width="2" />
+                <path d="M8 4v4" stroke="white" stroke-width="2" />
+                <path d="M16 4v4" stroke="white" stroke-width="2" />
+                <path d="M7 12h3M7 16h3M12 12h5M12 16h5" stroke="white" stroke-width="2" />
+              </svg>
+              Email to schedule
+            </a>
+
+            <a class="btn" href="#services">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Explore workshops
+            </a>
+
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 9l4 4 4-4" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 17v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Download brochure
+            </a>
           </div>
 
           <div class="pills" aria-label="Service areas">
-            <span class="pill"><b>In-person:</b> Maryland • Washington DC • Virginia (DMV)</span>
-            <span class="pill"><b>Virtual:</b> USA + worldwide (any time zone)</span>
-            <span class="pill"><b>Format:</b> 1–3.5 hours or half-day</span>
+            <span class="pill">
+              <span class="mini" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 0 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 10.5a2 2 0 1 0 0 .01Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <b>In-person:</b> Maryland • Washington DC • Virginia (DMV)
+            </span>
+            <span class="pill">
+              <span class="mini" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M2 12h20" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 2a15 15 0 0 1 0 20" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 2a15 15 0 0 0 0 20" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <b>Virtual:</b> USA + worldwide (any time zone)
+            </span>
+            <span class="pill">
+              <span class="mini" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <b>Format:</b> 1–3.5 hours or half-day
+            </span>
           </div>
 
-          <!-- Extra SEO-friendly text without being spammy -->
-          <p class="small" style="margin-top:14px;">
-            If you’re searching for <strong>training</strong>, <strong>talent development</strong>, <strong>staff development</strong>,
-            or <strong>leadership development</strong> in the DMV—this is built for you.
-          </p>
+          <div style="margin-top:18px">
+            <div class="trust" aria-label="Who this is ideal for">
+              <strong>Ideal for:</strong>
+              <div class="chips">
+                <span class="chip"><span class="c-dot"></span> HR managers</span>
+                <span class="chip"><span class="c-dot"></span> Small businesses</span>
+                <span class="chip"><span class="c-dot"></span> Schools</span>
+                <span class="chip"><span class="c-dot"></span> Universities</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <aside class="visual" aria-label="Leadership development training workshop for managers and staff">
+        <aside class="hero-card" aria-label="Workshop image with callout">
+          <div class="img" role="img" aria-label="Leadership development training workshop for managers and staff"></div>
+
+          <!-- Decorative wave lines (inspired by the wave motif + large hero imagery style) -->
+          <svg class="wave" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,540 C160,460 260,650 420,570 C580,490 640,630 800,560 C960,490 1040,610 1200,540 L1200,800 L0,800 Z"
+              fill="rgba(255,255,255,.18)"></path>
+            <path d="M0,610 C160,530 260,720 420,640 C580,560 640,700 800,630 C960,560 1040,680 1200,610"
+              fill="none" stroke="rgba(255,255,255,.35)" stroke-width="4"></path>
+            <path d="M0,665 C160,585 260,775 420,695 C580,615 640,755 800,685 C960,615 1040,735 1200,665"
+              fill="none" stroke="rgba(255,255,255,.22)" stroke-width="3"></path>
+          </svg>
+
           <div class="overlay">
-            <div class="float">
-              <h3>Designed for busy HR + team leaders</h3>
-              <p>
-                Practical, interactive workshops that improve communication, collaboration, and leadership—customized to your team.
-              </p>
-              <div class="mini-row" style="margin-top:12px;">
-                <div class="mini-badge"><span>✓</span> Clear outcomes</div>
-                <div class="mini-badge"><span>✓</span> Easy scheduling</div>
-                <div class="mini-badge"><span>✓</span> Custom fit</div>
+            <div class="glass">
+              <h3>Built for teams without internal L&D</h3>
+              <p>Practical, interactive workshops that improve communication, collaboration, and leadership—customized to your people and your reality.</p>
+
+              <div class="stats" aria-label="Highlights">
+                <div class="stat">
+                  <b>Interactive</b>
+                  <span>Real participation, not lectures</span>
+                </div>
+                <div class="stat">
+                  <b>Customized</b>
+                  <span>Tailored to your requirements</span>
+                </div>
+                <div class="stat">
+                  <b>Easy to schedule</b>
+                  <span>DMV on-site + virtual worldwide</span>
+                </div>
               </div>
             </div>
           </div>
         </aside>
       </div>
-
-      <!-- Warm image strip -->
-      <div class="image-strip" aria-label="Workshop moments">
-        <div class="img-card">
-          <div class="img" role="img" aria-label="Staff development training: team collaboration workshop"
-            style="background-image:url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=70');"></div>
-          <div class="cap">
-            <strong>Staff development that actually changes behavior</strong>
-            <span>Interactive sessions for communication, trust, and teamwork.</span>
-          </div>
-        </div>
-        <div class="img-card">
-          <div class="img" role="img" aria-label="Talent development and leadership development training session"
-            style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=70');"></div>
-          <div class="cap">
-            <strong>Talent development + leadership development</strong>
-            <span>Clear tools leaders can apply immediately.</span>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- WHO IT'S FOR / HOOK -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,70 C240,110 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
+
+  <!-- WHY / HOOK -->
   <section id="why">
     <div class="container">
-      <h2 class="section-title">If you don’t have internal learning & talent development staff, this is your plug-in solution</h2>
-      <p class="section-sub">
-        Many small businesses, schools, and university departments are expected to improve performance and culture—without an internal L&D team.
-        I help you deliver high-quality <strong>training</strong> and <strong>leadership development</strong> quickly and confidently.
-      </p>
+      <div class="section-head">
+        <div class="eyebrow2"><span class="spark"></span> The hook</div>
+        <h2 class="balance">If training is “on your plate” but you don’t have internal talent development staff—this is your plug-in solution.</h2>
+        <p class="sub">You get a clear plan, engaging facilitation, and tools your leaders and staff can use immediately—without spending months building a program.</p>
+      </div>
 
-      <div class="split">
-        <div class="panel mist">
+      <div class="grid2">
+        <div class="panel alt">
           <h3>Common situations I help with</h3>
           <ul>
-            <li>You need leadership development training, but no one has time to build it.</li>
-            <li>You want staff development that improves communication and collaboration.</li>
+            <li>You need <strong>leadership development training</strong>, but no one has time to design it.</li>
+            <li>You want <strong>staff development</strong> that improves communication and collaboration.</li>
             <li>You’re promoting supervisors and need manager training that sticks.</li>
-            <li>You want a healthier culture—trust, accountability, and engagement.</li>
+            <li>You want a healthier culture: trust, accountability, engagement.</li>
           </ul>
         </div>
+
         <div class="panel">
-          <h3>What you can expect</h3>
+          <h3>What you’ll get</h3>
           <ul>
-            <li><strong>Fast alignment:</strong> a short discovery call to clarify goals and audience.</li>
-            <li><strong>Customized design:</strong> activities and scenarios tailored to your environment.</li>
-            <li><strong>Strong facilitation:</strong> interactive learning—no “lecture-only” sessions.</li>
-            <li><strong>Practical takeaways:</strong> tools participants can use the same week.</li>
+            <li><strong>Discovery + alignment</strong> (fast, simple)</li>
+            <li><strong>Customized agenda</strong> aligned to your context</li>
+            <li><strong>Interactive facilitation</strong> with practical tools</li>
+            <li><strong>Clear outcomes</strong> your team can feel right away</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DMV -->
-  <section id="dmv">
-    <div class="container">
-      <h2 class="section-title">In-person training in Maryland, Washington DC & Virginia (DMV)</h2>
-      <p class="section-sub">
-        For organizations in the DMV, I deliver on-site <strong>staff development</strong> and <strong>leadership development training</strong>
-        that’s professional, engaging, and easy to schedule—ideal when you need results without building an internal training department.
-      </p>
-
-      <div class="split">
-        <div class="panel">
-          <h3>Local focus (DMV)</h3>
-          <ul>
-            <li>Maryland • Washington DC • Northern Virginia</li>
-            <li>Great for schools, universities, nonprofits, and growing small businesses</li>
-            <li>On-site workshops or half-day retreats</li>
-          </ul>
-        </div>
-        <div class="panel mist">
-          <h3>Typical schedule</h3>
-          <ul>
-            <li>Workshop duration: <strong>1–3.5 hours</strong></li>
-            <li>Half-day: <strong>9:00–12:30</strong> or <strong>1:00–4:30</strong></li>
-            <li>Pricing includes facilitation + development</li>
-            <li>Topics tailored to your needs</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIRTUAL -->
-  <section id="virtual">
-    <div class="container">
-      <h2 class="section-title">Virtual workshops anywhere in the USA and worldwide (any time zone)</h2>
-      <p class="section-sub">
-        I deliver virtual <strong>training</strong>, <strong>talent development</strong>, and <strong>leadership development</strong> workshops
-        across the USA and globally—regardless of time zone. Sessions are interactive with breakout-friendly activities and clear outcomes.
-      </p>
-
-      <div class="split">
-        <div class="panel mist">
-          <h3>Virtual is ideal when…</h3>
-          <ul>
-            <li>Your team is remote or hybrid</li>
-            <li>You want consistent staff development across locations</li>
-            <li>You need a high-quality experience without travel costs</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3>Virtual experience (what it feels like)</h3>
-          <ul>
-            <li>Interactive exercises and guided discussion</li>
-            <li>Tools, templates, and actionable next steps</li>
-            <li>Optional follow-up resources for reinforcement</li>
-          </ul>
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn primary" href="#contact">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="white" stroke-width="2" />
+                <path d="M3 8l9 6 9-6" stroke="white" stroke-width="2" />
+              </svg>
+              Let’s talk
+            </a>
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 3v4a2 2 0 0 0 2 2h4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              View brochure
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -557,81 +691,167 @@
   <!-- SERVICES -->
   <section id="services">
     <div class="container">
-      <h2 class="section-title">Training, Talent Development, Staff Development & Leadership Development Workshops</h2>
-      <p class="section-sub">
-        Choose a focused workshop or combine modules into a half-day retreat. Each session can be customized for your audience and goals.
-      </p>
+      <div class="section-head">
+        <div class="eyebrow2"><span class="spark"></span> Workshops</div>
+        <h2 class="balance">Training, talent development, staff development & leadership development—designed to be immediately usable</h2>
+        <p class="sub">Choose a focused workshop or combine modules into a half-day retreat. Workshop topics below are from the brochure. </p>
+      </div>
 
       <div class="cards">
         <article class="card">
-          <h3>Mastering Crucial Conversations</h3>
-          <p>Leadership development training for high-stakes discussions and alignment.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.5 7-11a7 7 0 0 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 10.5a2 2 0 1 0 0 .01Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Mastering Crucial Conversations</h3>
+          </div>
+          <p>Leadership development for high-stakes discussions where opinions vary and emotions run strong.</p>
           <ul>
-            <li>Handle emotions and differing opinions</li>
-            <li>Communicate clearly under pressure</li>
-            <li>Reach decisions with shared buy-in</li>
+            <li>Navigate difficult conversations</li>
+            <li>Build stronger relationships</li>
+            <li>Reach alignment on important matters</li>
           </ul>
+          <span class="hint">Leadership development</span>
         </article>
 
         <article class="card">
-          <h3>Fostering a Positive Workplace</h3>
-          <p>Staff development to build trust, appreciation, connection, and inclusivity.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M20 7l-8 10L4 12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Fostering a Positive Workplace</h3>
+          </div>
+          <p>Staff development that strengthens trust, appreciation, connection, and inclusivity.</p>
           <ul>
-            <li>Strengthen culture and engagement</li>
-            <li>Improve collaboration across roles</li>
-            <li>Practical habits teams can keep</li>
+            <li>Build trust and recognition habits</li>
+            <li>Increase connection and engagement</li>
+            <li>Use an inclusivity model</li>
           </ul>
+          <span class="hint">Staff development</span>
         </article>
 
         <article class="card">
-          <h3>Harness Your Strengths</h3>
-          <p>Talent development that boosts self-awareness and role alignment.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Harness Your Strengths</h3>
+          </div>
+          <p>Talent development focused on strengths, self-awareness, and performance at work.</p>
           <ul>
-            <li>Strengths-based development approach</li>
-            <li>Leverage talents at work</li>
-            <li>Build team alignment and momentum</li>
+            <li>Discover your Top 5 strengths</li>
+            <li>Leverage strengths strategically</li>
+            <li>Boost self-awareness daily</li>
           </ul>
+          <span class="hint">Talent development</span>
         </article>
 
         <article class="card">
-          <h3>Unleash Your Creative Potential</h3>
-          <p>Training that helps teams generate better ideas using design thinking.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2a7 7 0 0 0-4 13c.4.3.6.8.6 1.3V18h6.8v-1.7c0-.5.2-1 .6-1.3A7 7 0 0 0 12 2Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 22h6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Unleash Your Creative Potential</h3>
+          </div>
+          <p>Training that builds confidence and uses design thinking to generate better ideas.</p>
           <ul>
             <li>Boost confidence in innovation</li>
-            <li>Structured idea generation tools</li>
-            <li>Move from ideas to action</li>
+            <li>Learn design-thinking methods</li>
+            <li>Generate ideas consistently</li>
           </ul>
+          <span class="hint">Training</span>
         </article>
 
         <article class="card">
-          <h3>Crafting Your Organization’s Identity</h3>
-          <p>Leadership development for purpose, vision, mission, and cohesion.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 21V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 21V9h6v12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Crafting Your Organization’s Identity</h3>
+          </div>
+          <p>Leadership development around purpose, vision, mission, and a cohesive brand identity.</p>
           <ul>
-            <li>Clarify purpose and values</li>
+            <li>Uncover purpose and values</li>
             <li>Define vision and mission</li>
-            <li>Create a cohesive internal identity</li>
+            <li>Integrate into a unified identity</li>
           </ul>
+          <span class="hint">Leadership development</span>
         </article>
 
         <article class="card">
-          <h3>Team Building Through Adventure</h3>
-          <p>Staff development experiences that strengthen trust and communication.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17l10-10" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 7h6v6" stroke="currentColor" stroke-width="2"/>
+                <path d="M17 17h-6v-6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Team Building Through Adventure</h3>
+          </div>
+          <p>Staff development experiences designed to strengthen teamwork and communication.</p>
           <ul>
             <li>Escape room challenges</li>
-            <li>Murder mysteries and scenarios</li>
-            <li>Collaboration under real constraints</li>
+            <li>Murder mysteries</li>
+            <li>Crime-solving scenarios</li>
           </ul>
+          <span class="hint">Staff development</span>
         </article>
       </div>
 
-      <div class="panel mist" style="margin-top: var(--s5);">
-        <h3>Customized learning solutions</h3>
+      <div style="margin-top: var(--s5)" class="panel alt">
+        <h3>Workshop logistics (simple + predictable)</h3>
         <ul>
-          <li><strong>Duration:</strong> 1–3.5 hours (or half-day)</li>
-          <li><strong>Half-day schedule:</strong> 9:00–12:30 or 1:00–4:30</li>
+          <li><strong>Workshop duration:</strong> 1–3.5 hours</li>
+          <li><strong>Typical half-day schedule:</strong> 9:00am–12:30pm or 1:00pm–4:30pm</li>
           <li><strong>Pricing:</strong> includes facilitation and development costs</li>
           <li><strong>Customization:</strong> topics tailored to your requirements</li>
         </ul>
+        <p class="small" style="margin-top:10px">Source: workshop brochure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DMV / VIRTUAL -->
+  <section id="dmv">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow2"><span class="spark"></span> Delivery</div>
+        <h2 class="balance">In-person in the DMV. Virtual anywhere worldwide.</h2>
+        <p class="sub">In-person workshops are available in Maryland, Washington DC, and Virginia. Virtual workshops are available anywhere in the USA and worldwide—regardless of time zone.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="panel">
+          <h3>DMV in-person</h3>
+          <ul>
+            <li>On-site workshops and half-day retreats</li>
+            <li>Ideal for leaders and teams without internal L&D</li>
+            <li>Great for schools, universities, nonprofits, and small businesses</li>
+          </ul>
+        </div>
+
+        <div class="panel alt" id="virtual">
+          <h3>Virtual worldwide</h3>
+          <ul>
+            <li>USA + global delivery across time zones</li>
+            <li>Interactive format (breakout-friendly)</li>
+            <li>Clear tools and takeaways your team can use immediately</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -639,98 +859,65 @@
   <!-- HOW IT WORKS -->
   <section id="how">
     <div class="container">
-      <h2 class="section-title">How it works</h2>
-      <p class="section-sub">
-        A simple process that makes training easy to approve, schedule, and deliver—especially when you don’t have internal talent development staff.
-      </p>
+      <div class="section-head">
+        <div class="eyebrow2"><span class="spark"></span> How it works</div>
+        <h2 class="balance">A simple process that makes training easy to approve and schedule</h2>
+        <p class="sub">Designed for HR managers and leaders who need a reliable training partner—without building a program from scratch.</p>
+      </div>
 
       <div class="cards">
         <article class="card">
-          <h3>1) Discover</h3>
-          <p>Short call to clarify goals, audience, constraints, and success measures.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>1) Discover</h3>
+          </div>
+          <p>Short call to clarify audience, goals, and what success looks like.</p>
           <ul>
             <li>Who is the training for?</li>
-            <li>What needs to improve?</li>
-            <li>What does “success” look like?</li>
+            <li>What must improve?</li>
+            <li>What would “better” look like?</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>2) Design</h3>
-          <p>I build a tailored session plan that fits your organization and time.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M3 21l3-1 11-11-2-2L4 18l-1 3Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 6l2 2" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>2) Design</h3>
+          </div>
+          <p>Customized agenda and activities aligned to your environment and time.</p>
           <ul>
-            <li>Agenda + activities</li>
-            <li>Scenarios aligned to your context</li>
+            <li>Tailored scenarios</li>
+            <li>Interactive exercises</li>
             <li>Clear takeaways</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>3) Deliver</h3>
-          <p>Engaging facilitation, real participation, and practical tools.</p>
+          <div class="top">
+            <div class="badge-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M4 5h16v12H4z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 21h8" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 17v4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>3) Deliver</h3>
+          </div>
+          <p>Engaging facilitation with tools your team can apply immediately.</p>
           <ul>
-            <li>In-person (DMV) or virtual worldwide</li>
-            <li>Workshop or retreat format</li>
+            <li>DMV on-site or virtual worldwide</li>
+            <li>Workshop or half-day retreat</li>
             <li>Optional follow-up resources</li>
           </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About Namrata Ram</h2>
-      <p class="section-sub">
-        I help leaders and teams grow through practical, interactive training. My work focuses on talent development, staff development,
-        and leadership development that supports better communication, stronger collaboration, and a healthier workplace culture.
-      </p>
-      <div class="split">
-        <div class="panel mist">
-          <h3>Best fit for</h3>
-          <ul>
-            <li>Small businesses that want leadership development without hiring a full-time training staff</li>
-            <li>Schools and universities needing staff development and supervisor training</li>
-            <li>Teams that want better communication, accountability, and engagement</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3>Connect</h3>
-          <p class="contact-line"><strong>Email:</strong> <a href="mailto:tabithagram@yahoo.com">tabithagram@yahoo.com</a></p>
-          <p class="contact-line"><strong>Phone:</strong> <a href="tel:+12404080140">(240) 408-0140</a></p>
-          <p class="contact-line"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namrataram/">linkedin.com/in/namrataram</a></p>
-          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="#contact">Request a quote</a>
-            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf">View brochure</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container">
-      <h2 class="section-title">FAQ</h2>
-      <p class="section-sub">
-        Quick answers for HR managers and leaders looking for training, talent development, staff development, and leadership development.
-      </p>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Do you offer in-person leadership development training in the DMV?</h3>
-          <p>Yes—Maryland, Washington DC, and Virginia. On-site workshops and half-day retreats are available.</p>
-        </article>
-
-        <article class="card">
-          <h3>Can you deliver virtual workshops across time zones?</h3>
-          <p>Yes—virtual training is available anywhere in the USA and worldwide, regardless of time zone.</p>
-        </article>
-
-        <article class="card">
-          <h3>What if we don’t have internal learning and talent development staff?</h3>
-          <p>That’s the point—I act as your plug-in training partner and handle design + facilitation.</p>
         </article>
       </div>
     </div>
@@ -739,56 +926,124 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-sub">
-        Share your audience, goals, and delivery preference (DMV in-person or virtual). I’ll recommend the best workshop format and send a clear quote.
-      </p>
+      <div class="section-head">
+        <div class="eyebrow2"><span class="spark"></span> Contact</div>
+        <h2 class="balance">Let’s make training easy.</h2>
+        <p class="sub">Tell me your audience, goals, and whether you prefer DMV in-person or virtual. I’ll recommend the best workshop format and send a clear quote.</p>
+      </div>
 
       <div class="contact">
-        <div class="panel mist">
+        <div class="panel alt">
           <h3>Direct contact</h3>
-          <p class="contact-line"><strong>Email:</strong> <a href="mailto:tabithagram@yahoo.com">tabithagram@yahoo.com</a></p>
-          <p class="contact-line"><strong>Phone:</strong> <a href="tel:+12404080140">(240) 408-0140</a></p>
-          <p class="contact-line"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namrataram/">Namrata Ram</a></p>
 
-          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)&body=Hi%20Namrata%2C%0A%0AWe%E2%80%99re%20interested%20in%20training%20%2F%20talent%20development%20%2F%20staff%20development%20%2F%20leadership%20development.%0AOrganization%3A%0ALocation%20(DMV%20or%20Virtual)%3A%0AParticipants%3A%0AGoal%3A%0APreferred%20dates%3A%0A%0AThank%20you!">Email with details</a>
-            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>Download brochure</a>
+          <div class="contact-row">
+            <div class="contact-card">
+              <div class="badge-icon" aria-hidden="true" style="width:42px;height:42px;border-radius:16px;">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="currentColor" stroke-width="2" />
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <div>
+                <b>Email</b>
+                <span><a href="mailto:tabithagram@yahoo.com">tabithagram@yahoo.com</a></span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="badge-icon" aria-hidden="true" style="width:42px;height:42px;border-radius:16px;">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2c-9.2-.9-16.9-8.6-17.8-17.8A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7l.5 2.6a2 2 0 0 1-.6 1.8L7.9 9.1a14 14 0 0 0 7 7l1-1a2 2 0 0 1 1.8-.6l2.6.5a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <b>Phone</b>
+                <span><a href="tel:+12404080140">(240) 408-0140</a></span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="badge-icon" aria-hidden="true" style="width:42px;height:42px;border-radius:16px;">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M16 8a6 6 0 0 1-12 0" stroke="currentColor" stroke-width="2"/>
+                  <path d="M2 8a10 10 0 0 0 20 0" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 22v-6" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <b>LinkedIn</b>
+                <span><a href="https://www.linkedin.com/in/namrataram/" target="_blank" rel="noopener">Namrata Ram</a></span>
+              </div>
+            </div>
           </div>
 
-          <p class="small" style="margin-top:14px;">
-            Typical response time: <strong>within 1–2 business days</strong>.
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="white" stroke-width="2" />
+                <path d="M3 8l9 6 9-6" stroke="white" stroke-width="2" />
+              </svg>
+              Email me
+            </a>
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 3v4a2 2 0 0 0 2 2h4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Brochure
+            </a>
+          </div>
+
+          <p class="small" style="margin-top:14px">
+            <strong>Delivery:</strong> DMV in-person (Maryland, Washington DC, Virginia) · Virtual worldwide (any time zone)
           </p>
         </div>
 
         <div class="panel">
           <h3>Quick inquiry form</h3>
-          <!-- Optional: Formspree. Replace with your real endpoint or remove the form entirely. -->
+          <p class="small" style="margin-top:-6px">Optional: replace the action URL with your Formspree endpoint, or remove the form.</p>
+
           <form action="https://formspree.io/f/yourFormId" method="POST">
             <div>
               <label for="name">Name</label>
               <input id="name" name="name" autocomplete="name" required />
             </div>
+
             <div>
               <label for="org">Organization</label>
               <input id="org" name="organization" autocomplete="organization" />
             </div>
+
             <div>
               <label for="email">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
+
             <div>
               <label for="delivery">In-person (DMV) or Virtual?</label>
-              <input id="delivery" name="delivery" placeholder="Example: In-person (DC) / Virtual (ET)" required />
+              <input id="delivery" name="delivery" placeholder="Example: In-person (Maryland) / Virtual (ET)" required />
             </div>
+
             <div>
               <label for="message">What outcome do you want from this training?</label>
-              <textarea id="message" name="message" required placeholder="Example: leadership development for new supervisors, staff development for communication, talent development for engagement..."></textarea>
+              <textarea id="message" name="message" required placeholder="Example: leadership development for new supervisors; staff development for communication; talent development for engagement..."></textarea>
             </div>
-            <button class="btn primary" type="submit">Send</button>
+
+            <button class="btn primary" type="submit">
+              <svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path d="M22 2L11 13" stroke="white" stroke-width="2"/>
+                <path d="M22 2l-7 20-4-9-9-4 20-7Z" stroke="white" stroke-width="2"/>
+              </svg>
+              Send inquiry
+            </button>
           </form>
         </div>
       </div>
+
+      <!-- SEO-friendly (visible, not spammy) -->
+      <p class="small" style="margin-top:16px">
+        Keywords: training · talent development · staff development · leadership development · manager training · supervisor training · team workshops · Maryland · Washington DC · Virginia.
+      </p>
     </div>
   </section>
 
@@ -800,16 +1055,15 @@
       </div>
     </div>
   </footer>
-
-  <!-- Hidden keyword support (accessible) -->
-  <div class="sr-only" aria-hidden="true">
-    Training Maryland, training Washington DC, training Virginia, leadership development DMV, staff development workshops,
-    talent development consulting, leadership development training for managers, supervisor training, team training.
-  </div>
 </main>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
+<!-- Notes:
+  - Replace hero image URL with a real photo of you facilitating (best conversion).
+  - Keep the PDF filename in the same directory: Empowering-Leaders-Transforming-Teams.pdf
+-->
 </body>
 </html>
