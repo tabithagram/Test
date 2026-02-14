@@ -3,596 +3,813 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Interactive leadership workshops and team learning experiences—customized for your organization." />
-  <title>[Business Name] — Empowering Leaders, Transforming Teams</title>
 
-  <!-- Fonts (optional, remove if you want pure system fonts) -->
+  <title>Training, Talent Development, Staff Development & Leadership Development | D&D Learning and Consulting Solutions</title>
+  <meta name="description" content="D&D Learning and Consulting Solutions provides training, talent development, staff development, and leadership development workshops for small businesses, schools, and universities. In-person in Maryland, Washington DC & Virginia (DMV). Virtual workshops anywhere in the USA and worldwide across time zones." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://YOURDOMAIN.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="D&D Learning and Consulting Solutions" />
+  <meta property="og:description" content="Your on-call training partner—talent development, staff development, and leadership development. DMV in-person + virtual worldwide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOURDOMAIN.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "D&D Learning and Consulting Solutions",
+    "founder": "Namrata Ram",
+    "url": "https://YOURDOMAIN.com/",
+    "telephone": "+12404080140",
+    "email": "tabithagram@yahoo.com",
+    "sameAs": ["https://www.linkedin.com/in/namrataram/"],
+    "description": "Training, talent development, staff development, and leadership development workshops for small businesses, schools, and universities. In-person in Maryland, Washington DC, and Virginia (DMV). Virtual workshops anywhere in the USA and worldwide across time zones.",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Maryland" },
+      { "@type": "AdministrativeArea", "name": "Virginia" },
+      { "@type": "AdministrativeArea", "name": "District of Columbia" },
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Place", "name": "Worldwide" }
+    ],
+    "serviceType": [
+      "Training and Development",
+      "Talent Development",
+      "Staff Development",
+      "Leadership Development",
+      "Manager Training",
+      "Supervisor Training",
+      "Team Training"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you offer leadership development training in Maryland, Washington DC, and Virginia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. D&D Learning and Consulting Solutions delivers in-person leadership development, staff development, and training workshops across Maryland, Washington DC, and Virginia (the DMV region)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide virtual training workshops across time zones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Virtual training, talent development, and leadership development workshops are available anywhere in the USA and worldwide, regardless of time zone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of organizations do you support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I work with small businesses, schools, universities, and teams that need training and talent development but do not have internal learning and development staff."
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root{
-      /* Color system: professional, clean */
-      --bg: #fbfbf9;          /* warm white */
-      --panel: #ffffff;       /* cards */
-      --text: #0b1220;        /* deep navy/charcoal */
-      --muted: #526070;       /* secondary text */
-      --border: rgba(11,18,32,.10);
+      /* Warm + modern palette */
+      --bg:#FBF7F2;
+      --panel:#FFFFFF;
+      --mist:#EAF4F2;
+      --text:#0B1220;
+      --muted:#516070;
+      --border:rgba(11,18,32,.10);
 
-      --primary: #0f766e;     /* deep teal */
-      --primary-2: #115e59;   /* darker teal */
-      --accent: #b45309;      /* muted copper (sparingly) */
+      --primary:#0F766E;
+      --primary2:#115E59;
+      --accent:#B45309;
 
-      --shadow: 0 12px 30px rgba(11,18,32,.08);
-      --radius: 18px;
-      --max: 1120px;
+      --shadow:0 18px 44px rgba(11,18,32,.10);
+      --shadow2:0 10px 24px rgba(11,18,32,.06);
 
-      --space-1: 8px;
-      --space-2: 12px;
-      --space-3: 16px;
-      --space-4: 24px;
-      --space-5: 32px;
-      --space-6: 48px;
-      --space-7: 72px;
+      --r:18px;
+      --max:1120px;
+
+      --s1:8px; --s2:12px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:72px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--text);
-      background: radial-gradient(1000px 500px at 20% -10%, rgba(15,118,110,.10), transparent 55%),
-                  radial-gradient(900px 480px at 80% 0%, rgba(180,83,9,.08), transparent 55%),
-                  var(--bg);
-      line-height: 1.5;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      line-height:1.55;
+      background:
+        radial-gradient(900px 520px at 10% -10%, rgba(15,118,110,.18), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(180,83,9,.14), transparent 62%),
+        linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,0) 45%),
+        var(--bg);
+    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:none}
+    .container{max-width:var(--max);margin:0 auto;padding:0 var(--s4)}
+    .sr-only{
+      position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+      clip:rect(0,0,0,0);white-space:nowrap;border:0;
     }
 
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: none; }
-
-    .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--space-4); }
-
-    /* Top nav */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(251,251,249,.75);
-      border-bottom: 1px solid var(--border);
+    /* Nav */
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(10px);
+      background:rgba(251,247,242,.78);
+      border-bottom:1px solid var(--border);
     }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: var(--space-3) 0;
-      gap: var(--space-4);
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
+      padding:var(--s3) 0;
     }
-    .brand {
-      display: flex; align-items: center; gap: 10px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
+    .brand{
+      display:flex;align-items:center;gap:10px;
+      font-weight:800;letter-spacing:-.02em;
     }
-    .dot {
-      width: 10px; height: 10px; border-radius: 999px;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      box-shadow: 0 6px 14px rgba(15,118,110,.25);
+    .mark{
+      width:36px;height:36px;border-radius:14px;
+      background:linear-gradient(135deg,var(--primary),rgba(180,83,9,.95));
+      box-shadow:0 14px 30px rgba(15,118,110,.20);
     }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: var(--space-4);
-      font-weight: 500;
-      color: var(--muted);
-    }
-    .nav-links a { padding: 10px 8px; border-radius: 10px; }
-    .nav-links a:hover { background: rgba(15,118,110,.06); color: var(--text); }
-
-    .nav-cta { display: flex; gap: 10px; }
+    nav.links{display:flex;gap:14px;color:var(--muted);font-weight:700}
+    nav.links a{padding:10px 10px;border-radius:12px}
+    nav.links a:hover{background:rgba(15,118,110,.07);color:var(--text)}
+    .nav-cta{display:flex;gap:10px;align-items:center}
 
     /* Buttons */
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      padding: 12px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.75);
-      box-shadow: 0 10px 24px rgba(11,18,32,.06);
-      font-weight: 600;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      white-space: nowrap;
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 16px;border-radius:999px;border:1px solid var(--border);
+      background:rgba(255,255,255,.78);box-shadow:var(--shadow2);
+      font-weight:800;white-space:nowrap;
+      transition:transform .15s ease,background .15s ease,border-color .15s ease;
     }
-    .btn:hover { transform: translateY(-1px); border-color: rgba(15,118,110,.25); background: #fff; }
-    .btn:focus { outline: 3px solid rgba(15,118,110,.25); outline-offset: 2px; }
-
-    .btn-primary {
-      border-color: rgba(15,118,110,.35);
-      background: linear-gradient(135deg, rgba(15,118,110,.95), rgba(17,94,89,.95));
-      color: white;
-      box-shadow: 0 14px 30px rgba(15,118,110,.18);
+    .btn:hover{transform:translateY(-1px);background:#fff;border-color:rgba(15,118,110,.25)}
+    .btn.primary{
+      border-color:rgba(15,118,110,.45);
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      color:#fff;box-shadow:0 16px 36px rgba(15,118,110,.22);
     }
-    .btn-primary:hover { border-color: rgba(15,118,110,.55); }
+    .btn.ghost{
+      background:transparent;
+      border-color:rgba(11,18,32,.16);
+      box-shadow:none;
+    }
+    .btn.ghost:hover{background:rgba(255,255,255,.7)}
+    .btn:focus{outline:3px solid rgba(15,118,110,.25);outline-offset:2px}
 
     /* Hero */
-    .hero { padding: var(--space-7) 0 var(--space-6); }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: var(--space-6);
-      align-items: start;
+    .hero{padding:var(--s7) 0 var(--s6)}
+    .hero-grid{
+      display:grid;grid-template-columns:1.05fr .95fr;
+      gap:var(--s6);align-items:start;
     }
-    h1 {
-      font-size: clamp(40px, 4.4vw, 62px);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-      margin: 0 0 var(--space-4);
+    .eyebrow{
+      display:inline-flex;gap:10px;align-items:center;
+      padding:10px 12px;border-radius:999px;
+      background:rgba(15,118,110,.08);
+      border:1px solid rgba(15,118,110,.16);
+      color:rgba(15,118,110,.95);
+      font-weight:900;letter-spacing:-.01em;
+      margin-bottom:var(--s4);
     }
-    .lead {
-      font-size: 18px;
-      color: var(--muted);
-      margin: 0 0 var(--space-5);
-      max-width: 62ch;
+    .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--accent))}
+    h1{
+      font-size:clamp(40px,4.6vw,64px);
+      line-height:1.02;letter-spacing:-.04em;
+      margin:0 0 var(--s4);
     }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-    .hero-note {
-      margin-top: var(--space-4);
-      color: var(--muted);
-      font-size: 14px;
+    .lead{
+      font-size:18px;color:var(--muted);
+      margin:0 0 var(--s5);
+      max-width:78ch;
     }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;color:var(--muted);font-size:14px}
+    .pill{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:10px 12px;border-radius:999px;
+      background:rgba(255,255,255,.72);
+      border:1px solid var(--border);
+      box-shadow:0 10px 24px rgba(11,18,32,.05);
+    }
+    .pill b{color:var(--text)}
 
-    .hero-card {
-      background: rgba(255,255,255,.75);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: var(--space-5);
-      position: relative;
-      overflow: hidden;
+    /* Hero Visual */
+    .visual{
+      position:relative;border-radius:calc(var(--r) + 8px);
+      overflow:hidden;border:1px solid var(--border);
+      box-shadow:var(--shadow);min-height:540px;background:#fff;
     }
-    .hero-card::before{
-      content:"";
-      position:absolute; inset:-80px -120px auto auto;
-      width: 240px; height: 240px;
-      background: radial-gradient(circle at 30% 30%, rgba(15,118,110,.25), transparent 60%);
-      transform: rotate(12deg);
+    .visual::before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(180deg, rgba(11,18,32,.06), rgba(11,18,32,.45)),
+        url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
+      /* Replace with your own workshop photo for best results */
     }
-    .kicker {
-      display: inline-flex;
-      gap: 10px;
-      align-items: center;
-      font-weight: 600;
-      color: rgba(15,118,110,.95);
-      background: rgba(15,118,110,.08);
-      border: 1px solid rgba(15,118,110,.14);
-      padding: 10px 12px;
-      border-radius: 999px;
-      margin-bottom: var(--space-4);
+    .visual .overlay{
+      position:absolute;inset:0;
+      display:flex;flex-direction:column;
+      justify-content:flex-end;
+      padding:var(--s5);gap:var(--s3);
     }
-    .kicker span { color: var(--text); opacity: .85; font-weight: 600; }
-    .hero-list {
-      margin: var(--space-4) 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-      color: var(--muted);
+    .float{
+      background:rgba(255,255,255,.86);
+      border:1px solid rgba(255,255,255,.35);
+      border-radius:var(--r);
+      box-shadow:0 18px 44px rgba(11,18,32,.18);
+      padding:var(--s4);
+      backdrop-filter:blur(10px);
     }
-    .hero-list li{
-      display: grid;
-      grid-template-columns: 18px 1fr;
-      gap: 10px;
-      align-items: start;
+    .float h3{margin:0 0 8px;letter-spacing:-.02em}
+    .float p{margin:0;color:var(--muted);font-size:14px}
+    .mini-row{display:flex;gap:10px;flex-wrap:wrap}
+    .mini-badge{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:10px 12px;border-radius:999px;
+      background:rgba(234,244,242,.90);
+      border:1px solid rgba(15,118,110,.18);
+      color:rgba(11,18,32,.92);
+      font-weight:800;font-size:13px;
     }
-    .check {
-      width: 18px; height: 18px; border-radius: 6px;
-      background: rgba(15,118,110,.12);
-      border: 1px solid rgba(15,118,110,.20);
-      position: relative;
-      margin-top: 2px;
-    }
-    .check::after{
-      content:"";
-      position:absolute; left: 5px; top: 2px;
-      width: 6px; height: 10px;
-      border-right: 2px solid var(--primary);
-      border-bottom: 2px solid var(--primary);
-      transform: rotate(40deg);
+    .mini-badge span{
+      width:22px;height:22px;border-radius:10px;
+      display:inline-flex;align-items:center;justify-content:center;
+      background:rgba(15,118,110,.12);
+      border:1px solid rgba(15,118,110,.18);
     }
 
     /* Sections */
-    section { padding: var(--space-6) 0; }
-    .section-title {
-      font-size: 28px;
-      letter-spacing: -0.02em;
-      margin: 0 0 var(--space-2);
+    section{padding:var(--s6) 0}
+    .section-title{font-size:30px;letter-spacing:-.02em;margin:0 0 8px}
+    .section-sub{margin:0 0 var(--s5);color:var(--muted);max-width:88ch}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:start}
+    .panel{
+      background:rgba(255,255,255,.86);
+      border:1px solid var(--border);
+      border-radius:calc(var(--r) + 6px);
+      box-shadow:var(--shadow2);
+      padding:var(--s5);
     }
-    .section-sub {
-      margin: 0 0 var(--space-5);
-      color: var(--muted);
-      max-width: 70ch;
-    }
+    .panel.mist{background:rgba(234,244,242,.90);border-color:rgba(15,118,110,.14)}
+    .panel h3{margin:0 0 10px;letter-spacing:-.02em}
+    .panel ul{margin:0;padding-left:18px;color:var(--muted)}
+    .panel li{margin:8px 0}
 
-    /* Cards grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-4);
+    /* Workshop cards */
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+    .card{
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--border);
+      border-radius:var(--r);
+      padding:var(--s5);
+      box-shadow:var(--shadow2);
+      transition:transform .15s ease,border-color .15s ease;
+      min-height:240px;
     }
-    .card {
-      background: rgba(255,255,255,.78);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: var(--space-5);
-      box-shadow: 0 10px 24px rgba(11,18,32,.05);
-      transition: transform .15s ease, border-color .15s ease;
-      min-height: 220px;
-    }
-    .card:hover { transform: translateY(-2px); border-color: rgba(15,118,110,.22); }
-    .card h3 { margin: 0 0 10px; font-size: 18px; letter-spacing: -0.01em; }
-    .card p { margin: 0 0 12px; color: var(--muted); }
-    .bullets { margin: 0; padding-left: 18px; color: var(--muted); }
-    .bullets li { margin: 6px 0; }
+    .card:hover{transform:translateY(-2px);border-color:rgba(15,118,110,.22)}
+    .card h3{margin:0 0 10px;font-size:18px;letter-spacing:-.01em}
+    .card p{margin:0 0 12px;color:var(--muted)}
+    .card ul{margin:0;padding-left:18px;color:var(--muted)}
+    .card li{margin:6px 0}
 
-    /* Solutions panel */
-    .panel {
-      background: rgba(255,255,255,.80);
-      border: 1px solid var(--border);
-      border-radius: calc(var(--radius) + 6px);
-      box-shadow: var(--shadow);
-      padding: var(--space-6);
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-4);
+    /* Image strip */
+    .image-strip{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: var(--s4);
+      align-items: stretch;
+      margin-top: var(--s5);
     }
-    .stat {
-      padding: var(--space-4);
-      border-radius: 16px;
-      background: rgba(15,118,110,.06);
-      border: 1px solid rgba(15,118,110,.12);
+    .img-card{
+      border-radius: calc(var(--r) + 8px);
+      overflow:hidden;
+      border:1px solid var(--border);
+      box-shadow: var(--shadow2);
+      background: #fff;
+      min-height: 320px;
+      position: relative;
     }
-    .stat .label { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
-    .stat .value { font-weight: 700; letter-spacing: -0.02em; }
-
-    /* How it works */
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
-    .step {
-      background: rgba(255,255,255,.78);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: var(--space-5);
+    .img-card .img{
+      position:absolute; inset:0;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.05);
     }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px; height: 34px;
-      border-radius: 12px;
-      background: rgba(180,83,9,.10);
-      border: 1px solid rgba(180,83,9,.16);
-      font-weight: 800;
-      margin-bottom: 12px;
-      color: rgba(180,83,9,.95);
+    .img-card .cap{
+      position:absolute; inset:auto 0 0 0;
+      padding: var(--s4);
+      background: linear-gradient(180deg, transparent, rgba(11,18,32,.55));
+      color: #fff;
     }
+    .cap strong{display:block;font-size:16px;letter-spacing:-.01em}
+    .cap span{display:block;opacity:.9;font-size:13px;margin-top:6px}
 
     /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-6);
-      align-items: start;
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
+    form{display:grid;gap:12px}
+    label{font-size:13px;color:var(--muted)}
+    input,textarea{
+      width:100%;padding:12px 14px;border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.92);
+      font:inherit;
     }
-    .contact-card {
-      background: rgba(255,255,255,.80);
-      border: 1px solid var(--border);
-      border-radius: calc(var(--radius) + 6px);
-      box-shadow: var(--shadow);
-      padding: var(--space-6);
+    textarea{min-height:120px;resize:vertical}
+    input:focus,textarea:focus{outline:3px solid rgba(15,118,110,.22);border-color:rgba(15,118,110,.35)}
+    .contact-line{margin:0 0 10px;color:var(--muted)}
+    .contact-line strong{color:var(--text)}
+    footer{
+      padding:var(--s6) 0;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
     }
-    .contact-item { margin: 0 0 12px; color: var(--muted); }
-    .contact-item strong { color: var(--text); }
-
-    form { display: grid; gap: 12px; }
-    label { font-size: 13px; color: var(--muted); }
-    input, textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.90);
-      font: inherit;
-    }
-    textarea { min-height: 120px; resize: vertical; }
-    input:focus, textarea:focus { outline: 3px solid rgba(15,118,110,.22); border-color: rgba(15,118,110,.35); }
-
-    /* Footer */
-    footer {
-      padding: var(--space-6) 0;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .footer-row {
-      display:flex;
-      justify-content: space-between;
-      gap: var(--space-4);
-      flex-wrap: wrap;
-    }
+    .footer-row{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap}
+    .small{font-size:13px;color:var(--muted)}
 
     /* Responsive */
     @media (max-width: 980px){
-      .hero-grid { grid-template-columns: 1fr; }
-      .grid { grid-template-columns: 1fr; }
-      .panel { grid-template-columns: 1fr 1fr; }
-      .steps { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; } /* keep it ultra-simple on small screens */
+      nav.links{display:none}
+      .hero-grid,.split,.cards,.contact,.image-strip{grid-template-columns:1fr}
+      .visual{min-height:440px}
+      .img-card{min-height:260px}
     }
   </style>
 </head>
 
 <body>
-  <header class="nav" role="banner">
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="mark" aria-hidden="true"></span>
+        <span>D&D Learning and Consulting Solutions</span>
+      </a>
+
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#services">Workshops</a>
+        <a href="#dmv">DMV in-person</a>
+        <a href="#virtual">Virtual</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="./Empowering-Leaders-Transforming-Teams.pdf">Brochure</a>
+        <a class="btn primary" href="#contact">Get a quote</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container">
-      <div class="nav-inner">
-        <a class="brand" href="#top" aria-label="Home">
-          <span class="dot" aria-hidden="true"></span>
-          <span>[Business Name]</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#how">How it works</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="nav-cta">
-          <a class="btn" href="#services">View workshops</a>
-          <a class="btn btn-primary" href="[BOOKING LINK]">Book a workshop</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Training & talent development for teams without internal L&D</div>
+
+          <h1>Leadership development and staff development—without hiring a full-time training team.</h1>
+
+          <p class="lead">
+            I’m <strong>Namrata Ram</strong>, founder of <strong>D&D Learning and Consulting Solutions</strong>.
+            I provide <strong>training</strong>, <strong>talent development</strong>, <strong>staff development</strong>, and
+            <strong>leadership development</strong> workshops for small businesses, schools, and universities—so you get a high-quality
+            learning experience without building a program from scratch.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)&body=Hi%20Namrata%2C%0A%0AWe%E2%80%99re%20interested%20in%20training%20%2F%20talent%20development%20%2F%20staff%20development%20%2F%20leadership%20development.%0AOrganization%3A%0ALocation%20(DMV%20or%20Virtual)%3A%0AParticipants%3A%0AGoal%3A%0APreferred%20dates%3A%0A%0AThank%20you!">Email to schedule</a>
+            <a class="btn" href="#services">View workshops</a>
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>Download brochure</a>
+          </div>
+
+          <div class="pills" aria-label="Service areas">
+            <span class="pill"><b>In-person:</b> Maryland • Washington DC • Virginia (DMV)</span>
+            <span class="pill"><b>Virtual:</b> USA + worldwide (any time zone)</span>
+            <span class="pill"><b>Format:</b> 1–3.5 hours or half-day</span>
+          </div>
+
+          <!-- Extra SEO-friendly text without being spammy -->
+          <p class="small" style="margin-top:14px;">
+            If you’re searching for <strong>training</strong>, <strong>talent development</strong>, <strong>staff development</strong>,
+            or <strong>leadership development</strong> in the DMV—this is built for you.
+          </p>
+        </div>
+
+        <aside class="visual" aria-label="Leadership development training workshop for managers and staff">
+          <div class="overlay">
+            <div class="float">
+              <h3>Designed for busy HR + team leaders</h3>
+              <p>
+                Practical, interactive workshops that improve communication, collaboration, and leadership—customized to your team.
+              </p>
+              <div class="mini-row" style="margin-top:12px;">
+                <div class="mini-badge"><span>✓</span> Clear outcomes</div>
+                <div class="mini-badge"><span>✓</span> Easy scheduling</div>
+                <div class="mini-badge"><span>✓</span> Custom fit</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Warm image strip -->
+      <div class="image-strip" aria-label="Workshop moments">
+        <div class="img-card">
+          <div class="img" role="img" aria-label="Staff development training: team collaboration workshop"
+            style="background-image:url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=70');"></div>
+          <div class="cap">
+            <strong>Staff development that actually changes behavior</strong>
+            <span>Interactive sessions for communication, trust, and teamwork.</span>
+          </div>
+        </div>
+        <div class="img-card">
+          <div class="img" role="img" aria-label="Talent development and leadership development training session"
+            style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="cap">
+            <strong>Talent development + leadership development</strong>
+            <span>Clear tools leaders can apply immediately.</span>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <h1>Empowering Leaders,<br/>Transforming Teams</h1>
-            <p class="lead">
-              Unlock your team’s full potential with interactive workshops and retreats designed for supervisors,
-              managers, directors, and individual contributors.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="[BOOKING LINK]">Book a workshop</a>
-              <a class="btn" href="#services">Explore workshops</a>
-              <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>Download brochure</a>
+  <!-- WHO IT'S FOR / HOOK -->
+  <section id="why">
+    <div class="container">
+      <h2 class="section-title">If you don’t have internal learning & talent development staff, this is your plug-in solution</h2>
+      <p class="section-sub">
+        Many small businesses, schools, and university departments are expected to improve performance and culture—without an internal L&D team.
+        I help you deliver high-quality <strong>training</strong> and <strong>leadership development</strong> quickly and confidently.
+      </p>
+
+      <div class="split">
+        <div class="panel mist">
+          <h3>Common situations I help with</h3>
+          <ul>
+            <li>You need leadership development training, but no one has time to build it.</li>
+            <li>You want staff development that improves communication and collaboration.</li>
+            <li>You’re promoting supervisors and need manager training that sticks.</li>
+            <li>You want a healthier culture—trust, accountability, and engagement.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>What you can expect</h3>
+          <ul>
+            <li><strong>Fast alignment:</strong> a short discovery call to clarify goals and audience.</li>
+            <li><strong>Customized design:</strong> activities and scenarios tailored to your environment.</li>
+            <li><strong>Strong facilitation:</strong> interactive learning—no “lecture-only” sessions.</li>
+            <li><strong>Practical takeaways:</strong> tools participants can use the same week.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DMV -->
+  <section id="dmv">
+    <div class="container">
+      <h2 class="section-title">In-person training in Maryland, Washington DC & Virginia (DMV)</h2>
+      <p class="section-sub">
+        For organizations in the DMV, I deliver on-site <strong>staff development</strong> and <strong>leadership development training</strong>
+        that’s professional, engaging, and easy to schedule—ideal when you need results without building an internal training department.
+      </p>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Local focus (DMV)</h3>
+          <ul>
+            <li>Maryland • Washington DC • Northern Virginia</li>
+            <li>Great for schools, universities, nonprofits, and growing small businesses</li>
+            <li>On-site workshops or half-day retreats</li>
+          </ul>
+        </div>
+        <div class="panel mist">
+          <h3>Typical schedule</h3>
+          <ul>
+            <li>Workshop duration: <strong>1–3.5 hours</strong></li>
+            <li>Half-day: <strong>9:00–12:30</strong> or <strong>1:00–4:30</strong></li>
+            <li>Pricing includes facilitation + development</li>
+            <li>Topics tailored to your needs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRTUAL -->
+  <section id="virtual">
+    <div class="container">
+      <h2 class="section-title">Virtual workshops anywhere in the USA and worldwide (any time zone)</h2>
+      <p class="section-sub">
+        I deliver virtual <strong>training</strong>, <strong>talent development</strong>, and <strong>leadership development</strong> workshops
+        across the USA and globally—regardless of time zone. Sessions are interactive with breakout-friendly activities and clear outcomes.
+      </p>
+
+      <div class="split">
+        <div class="panel mist">
+          <h3>Virtual is ideal when…</h3>
+          <ul>
+            <li>Your team is remote or hybrid</li>
+            <li>You want consistent staff development across locations</li>
+            <li>You need a high-quality experience without travel costs</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Virtual experience (what it feels like)</h3>
+          <ul>
+            <li>Interactive exercises and guided discussion</li>
+            <li>Tools, templates, and actionable next steps</li>
+            <li>Optional follow-up resources for reinforcement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Training, Talent Development, Staff Development & Leadership Development Workshops</h2>
+      <p class="section-sub">
+        Choose a focused workshop or combine modules into a half-day retreat. Each session can be customized for your audience and goals.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Mastering Crucial Conversations</h3>
+          <p>Leadership development training for high-stakes discussions and alignment.</p>
+          <ul>
+            <li>Handle emotions and differing opinions</li>
+            <li>Communicate clearly under pressure</li>
+            <li>Reach decisions with shared buy-in</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Fostering a Positive Workplace</h3>
+          <p>Staff development to build trust, appreciation, connection, and inclusivity.</p>
+          <ul>
+            <li>Strengthen culture and engagement</li>
+            <li>Improve collaboration across roles</li>
+            <li>Practical habits teams can keep</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Harness Your Strengths</h3>
+          <p>Talent development that boosts self-awareness and role alignment.</p>
+          <ul>
+            <li>Strengths-based development approach</li>
+            <li>Leverage talents at work</li>
+            <li>Build team alignment and momentum</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Unleash Your Creative Potential</h3>
+          <p>Training that helps teams generate better ideas using design thinking.</p>
+          <ul>
+            <li>Boost confidence in innovation</li>
+            <li>Structured idea generation tools</li>
+            <li>Move from ideas to action</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Crafting Your Organization’s Identity</h3>
+          <p>Leadership development for purpose, vision, mission, and cohesion.</p>
+          <ul>
+            <li>Clarify purpose and values</li>
+            <li>Define vision and mission</li>
+            <li>Create a cohesive internal identity</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Team Building Through Adventure</h3>
+          <p>Staff development experiences that strengthen trust and communication.</p>
+          <ul>
+            <li>Escape room challenges</li>
+            <li>Murder mysteries and scenarios</li>
+            <li>Collaboration under real constraints</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="panel mist" style="margin-top: var(--s5);">
+        <h3>Customized learning solutions</h3>
+        <ul>
+          <li><strong>Duration:</strong> 1–3.5 hours (or half-day)</li>
+          <li><strong>Half-day schedule:</strong> 9:00–12:30 or 1:00–4:30</li>
+          <li><strong>Pricing:</strong> includes facilitation and development costs</li>
+          <li><strong>Customization:</strong> topics tailored to your requirements</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="container">
+      <h2 class="section-title">How it works</h2>
+      <p class="section-sub">
+        A simple process that makes training easy to approve, schedule, and deliver—especially when you don’t have internal talent development staff.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>1) Discover</h3>
+          <p>Short call to clarify goals, audience, constraints, and success measures.</p>
+          <ul>
+            <li>Who is the training for?</li>
+            <li>What needs to improve?</li>
+            <li>What does “success” look like?</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>2) Design</h3>
+          <p>I build a tailored session plan that fits your organization and time.</p>
+          <ul>
+            <li>Agenda + activities</li>
+            <li>Scenarios aligned to your context</li>
+            <li>Clear takeaways</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>3) Deliver</h3>
+          <p>Engaging facilitation, real participation, and practical tools.</p>
+          <ul>
+            <li>In-person (DMV) or virtual worldwide</li>
+            <li>Workshop or retreat format</li>
+            <li>Optional follow-up resources</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Namrata Ram</h2>
+      <p class="section-sub">
+        I help leaders and teams grow through practical, interactive training. My work focuses on talent development, staff development,
+        and leadership development that supports better communication, stronger collaboration, and a healthier workplace culture.
+      </p>
+      <div class="split">
+        <div class="panel mist">
+          <h3>Best fit for</h3>
+          <ul>
+            <li>Small businesses that want leadership development without hiring a full-time training staff</li>
+            <li>Schools and universities needing staff development and supervisor training</li>
+            <li>Teams that want better communication, accountability, and engagement</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Connect</h3>
+          <p class="contact-line"><strong>Email:</strong> <a href="mailto:tabithagram@yahoo.com">tabithagram@yahoo.com</a></p>
+          <p class="contact-line"><strong>Phone:</strong> <a href="tel:+12404080140">(240) 408-0140</a></p>
+          <p class="contact-line"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namrataram/">linkedin.com/in/namrataram</a></p>
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" href="#contact">Request a quote</a>
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf">View brochure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-sub">
+        Quick answers for HR managers and leaders looking for training, talent development, staff development, and leadership development.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Do you offer in-person leadership development training in the DMV?</h3>
+          <p>Yes—Maryland, Washington DC, and Virginia. On-site workshops and half-day retreats are available.</p>
+        </article>
+
+        <article class="card">
+          <h3>Can you deliver virtual workshops across time zones?</h3>
+          <p>Yes—virtual training is available anywhere in the USA and worldwide, regardless of time zone.</p>
+        </article>
+
+        <article class="card">
+          <h3>What if we don’t have internal learning and talent development staff?</h3>
+          <p>That’s the point—I act as your plug-in training partner and handle design + facilitation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">
+        Share your audience, goals, and delivery preference (DMV in-person or virtual). I’ll recommend the best workshop format and send a clear quote.
+      </p>
+
+      <div class="contact">
+        <div class="panel mist">
+          <h3>Direct contact</h3>
+          <p class="contact-line"><strong>Email:</strong> <a href="mailto:tabithagram@yahoo.com">tabithagram@yahoo.com</a></p>
+          <p class="contact-line"><strong>Phone:</strong> <a href="tel:+12404080140">(240) 408-0140</a></p>
+          <p class="contact-line"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/namrataram/">Namrata Ram</a></p>
+
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" href="mailto:tabithagram@yahoo.com?subject=Training%20Inquiry%20(D%26D)&body=Hi%20Namrata%2C%0A%0AWe%E2%80%99re%20interested%20in%20training%20%2F%20talent%20development%20%2F%20staff%20development%20%2F%20leadership%20development.%0AOrganization%3A%0ALocation%20(DMV%20or%20Virtual)%3A%0AParticipants%3A%0AGoal%3A%0APreferred%20dates%3A%0A%0AThank%20you!">Email with details</a>
+            <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf" download>Download brochure</a>
+          </div>
+
+          <p class="small" style="margin-top:14px;">
+            Typical response time: <strong>within 1–2 business days</strong>.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Quick inquiry form</h3>
+          <!-- Optional: Formspree. Replace with your real endpoint or remove the form entirely. -->
+          <form action="https://formspree.io/f/yourFormId" method="POST">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
             </div>
-            <p class="hero-note">Typical sessions run 1–3.5 hours and can be customized for your team.</p>
-          </div>
-
-          <aside class="hero-card" aria-label="Quick overview">
-            <div class="kicker">Built for teams <span>who want measurable growth</span></div>
-            <ul class="hero-list">
-              <li><span class="check" aria-hidden="true"></span><span><strong>Practical</strong> tools leaders can use immediately.</span></li>
-              <li><span class="check" aria-hidden="true"></span><span><strong>Interactive</strong> formats that drive engagement.</span></li>
-              <li><span class="check" aria-hidden="true"></span><span><strong>Customized</strong> to your culture, role level, and goals.</span></li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <h2 class="section-title">Workshops & experiences</h2>
-        <p class="section-sub">
-          Choose a focused workshop or combine modules into a half-day retreat. Every session can be tailored to your team.
-        </p>
-
-        <div class="grid">
-          <article class="card">
-            <h3>Unleash Your Creative Potential</h3>
-            <p>Build confidence and use design thinking to consistently generate better ideas.</p>
-            <ul class="bullets">
-              <li>Boost confidence in innovative thinking</li>
-              <li>Embrace design thinking mindsets</li>
-              <li>Generate ideas with repeatable tools</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Harness Your Strengths</h3>
-            <p>Use CliftonStrengths to uncover talent and turn it into performance.</p>
-            <ul class="bullets">
-              <li>Discover your Top 5 strengths</li>
-              <li>Leverage strengths at work</li>
-              <li>Boost self-awareness and alignment</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Team Building Through Adventure</h3>
-            <p>High-energy, collaborative experiences that strengthen trust and communication.</p>
-            <ul class="bullets">
-              <li>Escape room challenges</li>
-              <li>Murder mysteries</li>
-              <li>Crime-solving scenarios under pressure</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Crafting Your Organization’s Identity</h3>
-            <p>Clarify purpose and direction—then translate it into a cohesive team identity.</p>
-            <ul class="bullets">
-              <li>Uncover purpose and values</li>
-              <li>Define a compelling vision</li>
-              <li>Establish mission and cohesive brand</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Fostering a Positive Workplace</h3>
-            <p>Create a culture where people feel valued, connected, and included.</p>
-            <ul class="bullets">
-              <li>Build trust</li>
-              <li>Show appreciation and recognition</li>
-              <li>Foster connection and inclusivity</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Mastering Crucial Conversations</h3>
-            <p>Navigate high-stakes conversations with clarity, confidence, and respect.</p>
-            <ul class="bullets">
-              <li>Handle situations where emotions run strong</li>
-              <li>Communicate effectively when opinions vary</li>
-              <li>Reach alignment on what matters most</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="solutions">
-      <div class="container">
-        <h2 class="section-title">Customized learning solutions</h2>
-        <p class="section-sub">
-          Flexible delivery options—workshops, leadership sessions, and team retreats—tailored to your goals.
-        </p>
-
-        <div class="panel" role="list">
-          <div class="stat" role="listitem">
-            <div class="label">Workshop duration</div>
-            <div class="value">1–3.5 hours</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="label">Typical schedule</div>
-            <div class="value">9:00–12:30 or 1:00–4:30</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="label">Pricing includes</div>
-            <div class="value">Facilitation + development</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="label">Customization</div>
-            <div class="value">Topics tailored to you</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how">
-      <div class="container">
-        <h2 class="section-title">How it works</h2>
-        <p class="section-sub">
-          A simple process that keeps the experience focused, relevant, and easy to implement.
-        </p>
-
-        <div class="steps">
-          <div class="step">
-            <div class="badge">1</div>
-            <h3>Discover</h3>
-            <p class="section-sub" style="margin:0;">
-              A short call to understand your goals, participants, and current challenges.
-            </p>
-          </div>
-          <div class="step">
-            <div class="badge">2</div>
-            <h3>Design</h3>
-            <p class="section-sub" style="margin:0;">
-              We tailor activities, scenarios, and takeaways to your organization and roles.
-            </p>
-          </div>
-          <div class="step">
-            <div class="badge">3</div>
-            <h3>Deliver</h3>
-            <p class="section-sub" style="margin:0;">
-              An engaging session with actionable tools, plus optional follow-up resources.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="section-sub">
-          [Write 3–5 sentences here about your background, your facilitation style, and the outcomes you help teams achieve.
-          Keep it human and specific. Example: “I help leaders build trust, clarity, and momentum—so teams collaborate better and move faster.”]
-        </p>
-        <a class="btn" href="./Empowering-Leaders-Transforming-Teams.pdf">View brochure</a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-sub">
-          Tell me what you’re trying to improve—leadership skills, team culture, or communication—and I’ll suggest the best workshop format.
-        </p>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <p class="contact-item"><strong>Email:</strong> <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-            <p class="contact-item"><strong>Phone:</strong> <a href="tel:+15555555555">+1 (555) 555-5555</a></p>
-            <p class="contact-item"><strong>Booking:</strong> <a href="[BOOKING LINK]">[BOOKING LINK]</a></p>
-            <p class="contact-item">Typical response time: <strong>within 1–2 business days</strong>.</p>
-
-            <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top: 18px;">
-              <a class="btn btn-primary" href="mailto:hello@yourdomain.com?subject=Workshop%20Inquiry">Email me</a>
-              <a class="btn" href="[BOOKING LINK]">Book a call</a>
+            <div>
+              <label for="org">Organization</label>
+              <input id="org" name="organization" autocomplete="organization" />
             </div>
-          </div>
-
-          <div class="contact-card">
-            <!-- Form: replace action with your Formspree endpoint or use Netlify Forms -->
-            <form action="https://formspree.io/f/yourFormId" method="POST">
-              <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" autocomplete="name" required />
-              </div>
-              <div>
-                <label for="org">Organization</label>
-                <input id="org" name="organization" autocomplete="organization" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
-              </div>
-              <div>
-                <label for="message">What do you want your team to get better at?</label>
-                <textarea id="message" name="message" required placeholder="Example: crucial conversations, team trust, creative problem-solving, strengths-based leadership…"></textarea>
-              </div>
-              <button class="btn btn-primary" type="submit">Send message</button>
-              <p style="margin:10px 0 0; color: var(--muted); font-size: 13px;">
-                Prefer email? <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
-              </p>
-            </form>
-          </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label for="delivery">In-person (DMV) or Virtual?</label>
+              <input id="delivery" name="delivery" placeholder="Example: In-person (DC) / Virtual (ET)" required />
+            </div>
+            <div>
+              <label for="message">What outcome do you want from this training?</label>
+              <textarea id="message" name="message" required placeholder="Example: leadership development for new supervisors, staff development for communication, talent development for engagement..."></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer-row">
-          <div>© <span id="year"></span> [Business Name]. All rights reserved.</div>
-          <div style="display:flex; gap:12px; flex-wrap:wrap;">
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-            <a href="./Empowering-Leaders-Transforming-Teams.pdf">Brochure</a>
-          </div>
-        </div>
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> D&D Learning and Consulting Solutions</div>
+        <div>Training · Talent Development · Staff Development · Leadership Development · DMV + Virtual Worldwide</div>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
 
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Hidden keyword support (accessible) -->
+  <div class="sr-only" aria-hidden="true">
+    Training Maryland, training Washington DC, training Virginia, leadership development DMV, staff development workshops,
+    talent development consulting, leadership development training for managers, supervisor training, team training.
+  </div>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
